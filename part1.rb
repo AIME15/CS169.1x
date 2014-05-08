@@ -1,6 +1,6 @@
 def sum(arr)
   ans = 0
-  arr.each do { |elt| ans += elt }
+  arr.each { |elt| ans += elt }
   return ans
 end
 
@@ -13,8 +13,8 @@ def max_2_sum(arr)
 end
 
 def sum_to_n?(arr, n)
-  arr.each |elt1| do
-    arr.each |elt2| do
+  arr.each do |elt1|
+    arr.each do |elt2|
       if elt1 != elt2 && elt1 + elt2 == n
         return true
       end
